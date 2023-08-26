@@ -7,6 +7,24 @@
       {{ (i+1) + ': ' + color }}
     </li>
   </ul>
+
+  <h2>Oh, and here are some origamis to know:</h2>
+  <div class="horizontalBox">
+    <div class="origamiBox" *ngFor='let origami of origamis'>
+      <div class="origamiTitle"> {{ origami.modelName }}</div>
+      <div class="origamiBody">
+        <p>Author: {{ origami.author }}</p>
+        <p>Year: {{ origami.year? origami.year : 'Long time ago' }}</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Why don't you try to...</h2>
+  <button (click)="toggleClickMeText()">{{ clickMeText }}</button>
+
+  <h2>You should say something{{ userInput !== ''? ', not YELL it' : ''}}:</h2>
+  <input [(ngModel)]="userInput" />
+  <h1>{{ userInput.toUpperCase() }}</h1>
 </div>
 
 <router-outlet></router-outlet>

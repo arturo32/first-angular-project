@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --background-color: #fff;
+}
+
+html {
+  font-size: 24px;
+  background: var(--background-color);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 0.8rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+ul, ol {
+  margin: 0;
+}
+
+p {
+  margin: 0.5rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horizontalBox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 5px dashed #FFA700;
+  background: none;
+  border-radius: 1rem;
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+
+}
+
+button:hover,
+button:focus-visible {
+  border-color: blueviolet;
+}
+
+
+input {
+  height: 1.2rem;
+  font-size: 1rem;
+  border-style: solid;
+  border-radius: 5px;
+}
